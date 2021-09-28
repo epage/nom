@@ -165,7 +165,11 @@ where
 ///
 /// The parser will return the longest slice that matches the given predicate *(a function that
 /// takes the input and returns a bool)*.
+///
+/// If you need to work with a parser, instead of a predicate, see `recognize`.
+///
 /// # Example
+///
 /// ```rust
 /// # use nom::{Err, error::ErrorKind, Needed, IResult};
 /// use nom::bytes::complete::take_while;
